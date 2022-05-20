@@ -6,7 +6,7 @@ const Navbar = () => {
         <>
         {/* Navbar Logo */}
         <Link href="/">
-            <a className={Styles.nav_logo}>Daniel Himchan Yun</a>
+            <a className={Styles.nav_logo}>Daniel Yun</a>
         </Link>
 
         {/* Navbar */}
