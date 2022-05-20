@@ -1,0 +1,59 @@
+@use '/styles/lib/var.scss';
+
+.intro_section{
+    height: 100vh;
+    padding-top: var.$navbar_h;
+    // background-color: var.$primary_color;
+}
+
+.portfolio_section{
+    margin: auto;
+    background-color: var.$lightended_accent_color;
+    padding: 5vh 0;
+    .portfolio_title_container{
+        padding: 15vh 10vw;
+        .portfolio_title{
+            margin: 1rem;
+            text-align: center;
+            color: var.$primary_color;
+            font-size: var.$lg_font;
+            font-weight: bold;
+        }
+        .portfolio_subtitle{
+            margin: 1rem;
+            text-align: center;
+            color: var.$accent_color;
+            font-size: var.$sm_font;
+        }
+    }
+    
+    .portfolio_grid{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        row-gap: 1vh;
+        column-gap: 1vw;
+        padding: 0 5vw;
+        .portfolio_grid_item{
+            width: 350px;
+            background-color: white;
+            .portfolio_image_container{
+            }
+            .portfolio_image_title_container{
+                width:350px;
+                // height:250px;
+                background-color: white;
+                .portfolio_image_title{
+                    text-align: center;
+                    font-size: var.$xm_font;
+                    font-weight: bold;
+                }
+                .portfolio_image_subtitle{
+                    text-align: center;
+                    font-size: var.$xs_font;
+                    color: var.$subtitle_font_color;
+                }
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,47 @@
+@use '/styles/lib/var';
+
+.nav_logo{
+    position: fixed;
+    top: 1vw;
+    left: 1vh;
+    font-size: var.$lg_font;
+    z-index: 998;
+    line-height: 0.85;
+    text-align: left;
+    overflow: hidden;
+    font-family: var.$logo_font;
+    // mix-blend-mode: difference;
+    color: var.$primary_color;
+    
+}
+.nav{
+    display: flex; //grid
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: var.$navbar_h;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    font-size: var.$sm_font;
+    transition-duration: 0.5s;
+    z-index: 997;
+    overflow: hidden;
+}
+
+.navLink_container{
+    overflow: visible;
+}
+.navLink{
+    padding: 0px 10px 5px 10px;
+    margin: 0px 10px;
+    color: var.$accent_color;
+}
+
+.navLink:hover{
+    color: var.$darkened_accent_color;
+    border-bottom: 1px solid black;
+}
+
