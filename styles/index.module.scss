@@ -1,15 +1,81 @@
 @use '/styles/lib/var.scss';
 
 .intro_section{
+    display:flex;
+    align-items: center;
+    justify-content: center;
     height: 100vh;
-    padding-top: var.$navbar_h;
-    // background-color: var.$primary_color;
+    width: 100%;
+    background: linear-gradient(-45deg, var.$primary_color 50%, var.$accent_color 50%);
+    .intro_text{
+        text-align: center;
+        background:linear-gradient(-45deg, var.$accent_color 50%, var.$primary_color 50%);
+        background-clip:text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: var.$lg_font;
+        font-weight: bold;
+        //hover effect
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+    &:hover, &:focus, &:active {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+      }
+    }
+}
+
+.about_section{
+    min-height: 50vh;
+    .about_text_container{
+        .arrow_img_container{
+            margin: 0 auto;
+            width: 5vh;
+            height: 5vh;
+            border: 1px solid black;
+            .arrow_img{
+                width: 5vh;
+                height: 5vh;
+                object-fit: fill;
+            }
+        }
+        .arrow_down {
+            position:relative;
+            height: 3px;
+            width: 3px;
+            margin: 0 auto;
+            border: solid black;
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 3px;
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+        }
+        width: 80%;
+        height: 100%;
+        margin: 0 auto;
+        background-color: white;
+        // border: 1px black solid;
+        border-radius: 50px;
+        padding: 2.5vh 50px 50px 50px;
+        transform: translateY(-10vh);
+        .about_text{
+
+        }
+    }
 }
 
 .portfolio_section{
     margin: auto;
     background-color: var.$lightended_accent_color;
-    padding: 5vh 0;
+    padding: 5vh 0 20vh 0;
     .portfolio_title_container{
         padding: 15vh 10vw;
         .portfolio_title{
@@ -31,7 +97,7 @@
         
         display: grid;
         grid-template-columns: 33% 33% 33%;
-        row-gap: 1vh;
+        row-gap: 10vh;
         column-gap: 1vw;
         padding: 0 5vw;
         .portfolio_grid_item{

@@ -4,7 +4,7 @@
     position: fixed;
     top: 1vw;
     left: 1vh;
-    font-size: var.$lg_font;
+    font-size: var.$md_font;
     z-index: 998;
     line-height: 0.85;
     text-align: left;
@@ -29,6 +29,7 @@
     transition-duration: 0.5s;
     z-index: 997;
     overflow: hidden;
+    transform: translateY(-12vh);
 }
 
 .navLink_container{
