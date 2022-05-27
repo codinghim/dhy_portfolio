@@ -33,8 +33,11 @@
 }
 
 .about_section{
-    min-height: 50vh;
-    .about_text_container{
+    min-height: 80vh;
+    .about_container{
+        position: relative;
+        min-height: 100vh;
+        // border: 1px solid black;
         .arrow_img_container{
             position:relative;
             margin: 0 auto;
@@ -67,12 +70,69 @@
         border-radius: 50px;
         padding: 2.5vh 50px 50px 50px;
         transform: translateY(-10vh);
-        .about_text{
-
+        .about_text_container{
+            width: 60%;
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            .about_text{
+                text-align: center;
+                font-size: var.$sm_font;
+                color: var.$primary_color;
+                line-height: 2;
+            }
+            
         }
     }
 }
 
+.experience_section{
+    padding: 20vh 0;
+    text-align: center;
+    .experience_section_title{
+        font-size: var.$md_font;
+    }
+    .experience_title{
+        font-size: var.$xm_font;
+        color: var.$primary_color;
+    }
+    .experience_position{
+        font-size: var.$sm_font;
+    }
+    .experience_description{
+        font-size: var.$xs_font;
+    }
+}
+
+.skills_section{
+    border: 1px solid blue;
+    padding: 20vh 0;
+    background-color: var.$primary_color;
+    .skills_container{
+        // padding: 10vh 0;
+        width: 80%;
+        margin: 0 auto;
+        // border: 1px solid black;
+        text-align: center;
+        .skills_title{
+            color: var.$accent_color;
+            font-size: var.$md_font;
+        }
+        .skills_header{
+            color: var.$accent_color;
+            // color: var.$primary_color;
+            font-size: var.$xm_font;
+        }
+        .skills_text{
+            color: white;
+            // color: var.$accent_color;
+            font-size: var.$sm_font;
+        }
+    }
+}
 .portfolio_section{
     margin: auto;
     background-color: var.$lightended_accent_color;

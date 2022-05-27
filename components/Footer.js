@@ -5,41 +5,10 @@ const Footer = () => {
     return(
         <>
             <footer id="contactus" className={Styles.footer}>
-                <div className={Styles.contact_info_container}>
-                    <div className={Styles.info_container}>
-                        <div className={Styles.info_row}>
-                            <p className={Styles.address}>address</p>
-                            <a href="https://www.google.com/maps/place/Empire+State+Building/@40.7484405,-73.9856644,15z/data=!4m5!3m4!1s0x0:0xd134e199a405a163!8m2!3d40.7484405!4d-73.9856644">
-                                <p className={Styles.address}>20 W 34th St, New York, NY 10001</p>
-                            </a>
-                            
-                        </div>
-                        <div className={Styles.info_row}>
-                            
-                            <p className={Styles.number}>call</p>
-                            <div className={Styles.number}><a href="tel:777-777-7777">777-777-7777</a></div>
-                        </div>
-                    </div>
-                    <div className={Styles.info_container}>
-                        <div className={Styles.hour_row}>
-                            <p className={Styles.hour}>Sun</p>
-                            <p className={Styles.hour}>9am - 6pm</p>
-                        </div>
-                        <div className={Styles.hour_row}>
-                            <p className={Styles.hour}>Mon-Fri</p>
-                            <p className={Styles.hour}>9am - 7pm</p>
-                        </div>
-                        <div className={Styles.hour_row}>
-                            <p className={Styles.hour}>Sat</p>
-                            <p className={Styles.hour}>9am - 8pm</p>
-                        </div>
-                    </div>
+               <div className={Styles.icons_container}>
+                    <a href="https://github.com/codinghim"><Image src={"/images/logo/GitHub-Mark.png"} width={40} height={40}/></a>
                 </div>
-                <div className={Styles.icons_container}>
-                    <a href="https://instagram.com">instagram</a>
-                    <a href="https://facebook.com">facebook</a>
-                </div>
-                <p className={Styles.copyright}>Copyright &copy; 2021 MAGI Web Production. <br />All rights reserved</p>
+                <p className={Styles.copyright}>Copyright &copy; 2022 Daniel Himchan Yun <br />All rights reserved</p>
             </footer>
         </>
     )

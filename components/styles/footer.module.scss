@@ -1,0 +1,17 @@
+@use '/styles/lib/var';
+.footer{
+    min-height: 40vh;
+    .icons_container{
+        height: 5vh;
+        width: 60px;
+        margin: 0 auto;
+        padding-top: 20px;
+        overflow: visible;
+    }
+    .copyright{
+        color: var.$primary_color;
+        height: 15vh;
+        text-align: center;
+        padding-top: 5vh;
+    }
+}
