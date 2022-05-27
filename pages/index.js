@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Styles from '../styles/index.module.scss'
-import Link from 'next/link'
 import Layout from '../components/Layout'
 
 export default function Home() {
@@ -9,18 +8,18 @@ export default function Home() {
     <>
         <Head>
             <title>Daniel Yun</title>
-            {/* <link rel="icon" href="/favicon.ico" /> */}
         </Head>
         <Layout>
             <section className={Styles.intro_section}>
                 <div>
-                    <p className={Styles.intro_text}>Hi, I'm Daniel. <br />I am a web developer.</p>
+                    <p className={Styles.intro_text}>Hi, I&#39;m Daniel. <br />I am a web developer.</p>
                 </div>
             </section>
             <section className={Styles.about_section}>
                 <div className={Styles.about_text_container}>
                     <div className={Styles.arrow_img_container}>
-                    <img className={Styles.arrow_img} src="/images/comic_thumbnail.jpg"></img>
+                        {/* <a className={Styles.arrow_down} */}
+                        <Image src="/images/comic_thumbnail.jpg" layout="fill" />
                     </div>
                     <p className={Styles.about_text}>I am a web developer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
@@ -40,7 +39,7 @@ export default function Home() {
                 <div>
                     <p>Experience</p>
                     <p>Magi Web Production | 2020 - 2021</p>
-                    <p>Co-CEO & Software Developer</p>
+                    <p>Co-CEO and Software Developer</p>
                     <p>A start-up company which provides web solutions to businesses</p>
                     <p>https://company-website-coral.vercel.app/</p>
                 </div>
