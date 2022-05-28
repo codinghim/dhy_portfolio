@@ -17,12 +17,13 @@ export default function Home() {
                     <p className={Styles.intro_text}>Hi, I'm Daniel. <br />I am a web developer.</p>
                 </div>
             </section>
-            <section className={Styles.about_section}>
+            <section className={Styles.about_section} id="about_text">
                 <div className={Styles.about_text_container}>
                     <div className={Styles.arrow_img_container}>
-                    <img className={Styles.arrow_img} src="/images/comic_thumbnail.jpg"></img>
+                        <a className={Styles.arrow_down} href="#about_text"></a>
+                        {/* <img className={Styles.arrow_img} src="/images/comic_thumbnail.jpg"></img> */}
                     </div>
-                    <p className={Styles.about_text}>I am a web developer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p  className={Styles.about_text}>I am a web developer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
             </section>
             <section className={Styles.skills_section}>
@@ -46,7 +47,7 @@ export default function Home() {
                 </div>
 
             </section>
-            <section className={Styles.portfolio_section}>
+            {/* <section className={Styles.portfolio_section}>
                 <div className={Styles.portfolio_title_container}>
                     <p className={Styles.portfolio_title}>
                         Portfolio
@@ -128,7 +129,7 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
         </Layout>
         </>
   )

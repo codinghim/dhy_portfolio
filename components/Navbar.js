@@ -14,7 +14,7 @@ const Navbar = () => {
                 document.getElementById('navbar').style.transform = "none";
             }else{
                 document.getElementById('navbar').style.transform = "none";
-                document.getElementById('navbar').style.transform = "translateY(-12vh)";
+                document.getElementById('navbar').style.transform = "translateY(-6vh)";
             }
             
             // if(currentScrollPosition > prevScrollPosition){

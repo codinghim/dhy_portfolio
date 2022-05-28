@@ -34,40 +34,45 @@
 
 .about_section{
     min-height: 50vh;
+    padding: 0;
     .about_text_container{
-        .arrow_img_container{
-            margin: 0 auto;
-            width: 5vh;
-            height: 5vh;
-            border: 1px solid black;
-            .arrow_img{
-                width: 5vh;
-                height: 5vh;
-                object-fit: fill;
-            }
-        }
-        .arrow_down {
-            position:relative;
-            height: 3px;
-            width: 3px;
-            margin: 0 auto;
-            border: solid black;
-            border-width: 0 3px 3px 0;
-            display: inline-block;
-            padding: 3px;
-            transform: rotate(45deg);
-            -webkit-transform: rotate(45deg);
-        }
         width: 80%;
         height: 100%;
         margin: 0 auto;
         background-color: white;
-        // border: 1px black solid;
         border-radius: 50px;
-        padding: 2.5vh 50px 50px 50px;
-        transform: translateY(-10vh);
+        box-shadow: 0 5px 5px 0 rgb(233 240 243 / 50%), 0 0 0 1px #e6ecf8;
+        padding: 1.5vh 0 5vh 0;
+        transform: translateY(-7vh);
+        .arrow_img_container{
+            margin: 0 auto 1.5vh auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 4vh;
+            &:hover .arrow_down{
+                border-bottom-width: 4px;
+                border-right-width: 4px;
+            }
+            .arrow_down {
+                box-sizing: border-box;
+                height: 3vh;
+                width: 3vh;
+                border-style: solid;
+                border-color: var.$primary_color;
+                border-width: 0px 3px 3px 0px;
+                transform: rotate(45deg);
+                transition: border-width 150ms ease-in-out;
+            }
+        }
+        
         .about_text{
-
+            width: 60%;
+            margin: 10vh auto;
+            font-size: var.$xm_font;
+            color: var.$primary_color;
+            font-weight: 500;
+            text-align: center;
         }
     }
 }
