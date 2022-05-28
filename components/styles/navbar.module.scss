@@ -9,9 +9,11 @@
     line-height: 0.85;
     text-align: left;
     overflow: hidden;
-    font-family: var.$logo_font;
+    font-family: serif;
     // mix-blend-mode: difference;
     color: var.$primary_color;
+    display: inline-block;
+    vertical-align: middle; 
     
 }
 .nav{
@@ -43,6 +45,6 @@
 
 .navLink:hover{
     color: var.$darkened_accent_color;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var.$darkened_accent_color;
 }
 

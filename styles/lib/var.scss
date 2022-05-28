@@ -41,3 +41,14 @@ $light_font: WorkLight;
         border-color: black;
     }
 }
+
+.hyperlink{
+    border: 1px solid $primary_color;
+    border-radius: 10px;
+    padding: 5px;
+    color: $primary_color;
+    &:hover{
+        background-color: $primary_color;
+        color: white;
+    }
+}
