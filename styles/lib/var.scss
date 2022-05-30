@@ -3,8 +3,9 @@ $primary_color: rgb(102, 103, 171);
 $accent_color:  rgb(214, 180, 148);
 $darkened_accent_color:  rgb(159, 134, 110);
 $lightended_accent_color: rgb(250, 241, 232);
-$lightended_primary_color: rgb(169, 170, 224);
-$primary_color_opacity: rgb(102, 103, 171, 0.9);
+$lightended_primary_color: rgb(193, 194, 224);
+$primary_color_opacity: rgb(102, 103, 171, 0.95);
+
 /* Font sizes */
 $xxs_font: 13px;
 $xs_font: 15px;
@@ -16,7 +17,7 @@ $xl_font: 75px;
 $xxl_font: 100px;
 
 /* height */
-$navbar_h: 6vh; //change value in /components/navbar.js
+$navbar_h: calc($md_font + 2.6vh);//10vh; //change value in /components/navbar.js
 $footer_h: 20vh;
 $navbar_h_m: 8vh;
 /* font */
@@ -43,6 +44,7 @@ $light_font: WorkLight;
 }
 
 .hyperlink{
+    display: inline-block;
     border: 1px solid $primary_color;
     border-radius: 10px;
     padding: 5px;

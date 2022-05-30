@@ -2,8 +2,8 @@
 
 .nav_logo{
     position: fixed;
-    top: 1vw;
-    left: 1vh;
+    top: 1.3vh;
+    left: 1.3vw;
     font-size: var.$md_font;
     z-index: 998;
     line-height: 0.85;
@@ -20,13 +20,13 @@
     display: flex; //grid
     position:fixed;
     top: 0;
-    left: 0;
     right: 0;
+    left: 0;
     height: var.$navbar_h;
     background-color: white;
     justify-content: space-between;
     align-items: center;
-    padding: 31px 10%;
+    // padding: 31px 10%;
     font-size: var.$sm_font;
     transition-duration: 0.5s;
     z-index: 997;

@@ -37,18 +37,18 @@
     .about_container{
         position: relative;
         min-height: 100vh;
-        // border: 1px solid black;
+        width: 80%;
+        height: 100%;
+        margin: 0 auto;
+        background-color: white;
+        border-radius: 50px;
+        padding: 2.5vh 50px 50px 50px;
+        transform: translateY(-10vh);
         .arrow_img_container{
             position:relative;
             margin: 0 auto;
             width: 5vh;
             height: 5vh;
-            border: 1px solid black;
-            .arrow_img{
-                width: 5vh;
-                height: 5vh;
-                object-fit: fill;
-            }
         }
         .arrow_down {
             position:relative;
@@ -62,13 +62,6 @@
             transform: rotate(45deg);
             -webkit-transform: rotate(45deg);
         }
-        width: 80%;
-        height: 100%;
-        margin: 0 auto;
-        background-color: white;
-        border-radius: 50px;
-        padding: 2.5vh 50px 50px 50px;
-        transform: translateY(-10vh);
         .about_text_container{
             width: 60%;
             margin: 0;
@@ -88,54 +81,11 @@
     }
 }
 
-.experience_section{
-    padding: 20vh 0;
-    text-align: center;
-    .experience_section_title{
-        font-size: var.$md_font;
-    }
-    .experience_title{
-        font-size: var.$xm_font;
-        color: var.$primary_color;
-    }
-    .experience_position{
-        font-size: var.$sm_font;
-    }
-    .experience_description{
-        font-size: var.$xs_font;
-    }
-}
-
-.skills_section{
-    border: 1px solid blue;
-    padding: 20vh 0;
-    background-color: var.$primary_color;
-    .skills_container{
-        // padding: 10vh 0;
-        width: 80%;
-        margin: 0 auto;
-        // border: 1px solid black;
-        text-align: center;
-        .skills_title{
-            color: var.$accent_color;
-            font-size: var.$md_font;
-        }
-        .skills_header{
-            color: var.$accent_color;
-            // color: var.$primary_color;
-            font-size: var.$xm_font;
-        }
-        .skills_text{
-            color: white;
-            // color: var.$accent_color;
-            font-size: var.$sm_font;
-        }
-    }
-}
 .portfolio_section{
     margin: auto;
     background-color: var.$lightended_accent_color;
     padding: 5vh 0 20vh 0;
+    overflow: hidden;
     .portfolio_title_container{
         padding: 15vh 10vw;
         .portfolio_title{
@@ -152,9 +102,7 @@
             font-size: var.$sm_font;
         }
     }
-    
     .portfolio_grid{
-        
         display: grid;
         grid-template-columns: 33% 33% 33%;
         row-gap: 10vh;
@@ -162,11 +110,10 @@
         padding: 0 5vw;
         .portfolio_grid_item{
             width: 350px;
+            height: 250px;
             background-color: white;
-            
-            
-            // border-radius: 20px;
-            // overflow: hidden;
+            border-radius: 20px;
+            overflow: hidden;
             .portfolio_image_container{
                 position:relative;
                 &:hover{
@@ -187,30 +134,97 @@
                     background-color: var.$primary_color_opacity;
                     opacity: 0;
                     transition: 1s;
-                    .portfolio_grid_item_hover_title{
-                        color: white;
-                        text-align: center;
-                        font-size: var.$md_font;
+                    .portfolio_image_title_container{
+                        width: 90%;
+                        .portfolio_image_title{
+                            text-align: center;
+                            font-size: var.$xm_font;
+                            color: var.$accent_color;
+                            font-weight: bold;
+                        }
+                        .portfolio_image_subtitle{
+                            text-align: center;
+                            font-size: var.$xs_font;
+                            color: var.$lightended_accent_color;
+                        }
                     }
-                }
-            }
-            .portfolio_image_title_container{
-                width:350px;
-                // height:250px;
-                background-color: white;
-                .portfolio_image_title{
-                    text-align: center;
-                    font-size: var.$xm_font;
-                    color: var.$primary_color;
-                    font-weight: bold;
-                }
-                .portfolio_image_subtitle{
-                    text-align: center;
-                    font-size: var.$xs_font;
-                    color: var.$lightended_primary_color;
                 }
             }
         }
         
+    }
+}
+
+.experience_section{
+    padding: 20vh 0;
+    text-align: center;
+    .experience_section_title{
+        margin: 1rem;
+        text-align: center;
+        color: var.$primary_color;
+        font-size: var.$lg_font;
+        font-weight: bold;
+    }
+    .experience_section_subtitle{
+        margin: 1rem;
+        text-align: center;
+        color: var.$accent_color;
+        font-size: var.$sm_font;
+    }
+    .experience_container{
+        padding: 50px;
+        .experience_title{
+            font-size: var.$xm_font;
+            color: var.$primary_color;
+        }
+        .experience_position{
+            font-size: var.$sm_font;
+        }
+        .experience_description{
+            font-size: var.$xs_font;
+            color:rgb(122, 122, 122);
+            line-height: 2;
+            margin-bottom: 30px;
+        }
+        .experience_goal_logo{
+            font-size: var.$lg_font;
+            font-family: serif;
+            color: rgb(122, 122, 122);
+        }
+    }
+    .experience_divider_container{
+        position: relative;
+        height: 70px;
+        .experience_divider{
+            border-left: 2px dotted var.$primary_color;
+            height: 70px;
+            position: absolute;
+            left: 50%;
+            margin-left: -1px;
+            top: 0;
+        }
+    }
+}
+
+.skills_section{
+    border: 1px solid blue;
+    padding: 20vh 0;
+    background-color: var.$primary_color;
+    .skills_container{
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        .skills_title{
+            color: var.$accent_color;
+            font-size: var.$md_font;
+        }
+        .skills_header{
+            color: var.$accent_color;
+            font-size: var.$xm_font;
+        }
+        .skills_text{
+            color: white;
+            font-size: var.$sm_font;
+        }
     }
 }

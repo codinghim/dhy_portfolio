@@ -1,6 +1,11 @@
 @use '/styles/lib/var';
 .footer{
     min-height: 40vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 20px;
     .icons_container{
         height: 5vh;
         width: 60px;
