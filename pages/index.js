@@ -27,7 +27,7 @@ export default function Home() {
             </section>
 
 
-            <section className={Styles.portfolio_section}>
+            <section className={Styles.portfolio_section} id="portfolio">
                 <div className={Styles.portfolio_title_container}>
                     <p className={Styles.portfolio_title}>
                         Portfolio
@@ -74,7 +74,7 @@ export default function Home() {
                     </a>
                     <a className={Styles.portfolio_grid_item} href="https://github.com/codinghim/company_website" target="_blank" rel="noopener noreferrer" data-aos="fade-up" data-aos-delay="400">
                         <div className={Styles.portfolio_image_container}>
-                            <Image src={`/images/cyber_security_thumbnail.jpg`} width={350} height={250} objectFit="fill"/>
+                            <Image src={`/images/cafe_thumbnail.png`} width={350} height={250} objectFit="fill"/>
                             <div className={Styles.portfolio_grid_item_hover}>
                                 <div className={Styles.portfolio_image_title_container}>
                                     <p className={Styles.portfolio_image_title}>Website Templates</p>
@@ -85,7 +85,7 @@ export default function Home() {
                     </a>
                     <a className={Styles.portfolio_grid_item} href="https://github.com/codinghim/company_website" target="_blank" rel="noopener noreferrer" data-aos="fade-up">
                         <div className={Styles.portfolio_image_container}>
-                            <Image src={`/images/cyber_security_thumbnail.jpg`} width={350} height={250} objectFit="fill"/>
+                            <Image src={`/images/flashcard_thumbnail.jpg`} width={350} height={250} objectFit="fill"/>
                             <div className={Styles.portfolio_grid_item_hover}>
                                 <div className={Styles.portfolio_image_title_container}>
                                     <p className={Styles.portfolio_image_title}>Flash Cards</p>
@@ -114,7 +114,7 @@ export default function Home() {
             </section>
             
 
-            <section className={Styles.experience_section}>
+            <section className={Styles.experience_section} id="experience">
                     <p className={Styles.experience_section_title}>Experience</p>
                     <p className={Styles.experience_section_subtitle}>Professional experience</p>
                     <div className={Styles.experience_container}>
@@ -137,7 +137,7 @@ export default function Home() {
             </section>
 
 
-            <section className={Styles.skills_section}>
+            <section className={Styles.skills_section} id="skills">
                 <div className={Styles.skills_container}>
                     <p className={Styles.skills_title}>Skills</p>
                     <p className={Styles.skills_header}>Languages</p>

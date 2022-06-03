@@ -53,14 +53,14 @@ const Navbar = () => {
         <nav id="navbar" className={Styles.nav}>
             <div className={Styles.navLink}></div>
             <div className={Styles.navLink_container}>
-                <Link href="/">
-                    <a className={Styles.navLink}>Menu1</a>
+                <Link href="#portfolio">
+                    <a className={Styles.navLink}>Portfolio</a>
                 </Link>
-                <Link href="/">
-                    <a className={Styles.navLink}>Menu2</a>
+                <Link href="#experience">
+                    <a className={Styles.navLink}>Experience</a>
                 </Link>
-                <Link href="/">
-                    <a className={Styles.navLink}>Menu3</a>
+                <Link href="#skills">
+                    <a className={Styles.navLink}>Skills</a>
                 </Link>
                 <a href="#contactus" className={Styles.navLink}>Contact</a>
             </div>         
