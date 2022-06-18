@@ -77,7 +77,7 @@ export default function Home() {
                             </div>
                         </div>
                     </a>
-                    <a className={Styles.portfolio_grid_item} href="https://github.com/codinghim/company_website" target="_blank" rel="noopener noreferrer" data-aos="fade-up" data-aos-delay="400">
+                    <a className={Styles.portfolio_grid_item} href="https://github.com/codinghim/Website_templates" target="_blank" rel="noopener noreferrer" data-aos="fade-up" data-aos-delay="400">
                         <div className={Styles.portfolio_image_container}>
                             <Image src={`/images/cafe_thumbnail.png`} width={350} height={250} objectFit="fill"/>
                             <div className={Styles.portfolio_grid_item_hover}>
