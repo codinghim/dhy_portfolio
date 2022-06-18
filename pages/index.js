@@ -88,7 +88,7 @@ export default function Home() {
                             </div>
                         </div>
                     </a>
-                    <a className={Styles.portfolio_grid_item} href="https://github.com/codinghim/company_website" target="_blank" rel="noopener noreferrer" data-aos="fade-up">
+                    <a className={Styles.portfolio_grid_item} href="https://github.com/tylerhkmontana/flashcard" target="_blank" rel="noopener noreferrer" data-aos="fade-up">
                         <div className={Styles.portfolio_image_container}>
                             <Image src={`/images/flashcard_thumbnail.jpg`} width={350} height={250} objectFit="fill"/>
                             <div className={Styles.portfolio_grid_item_hover}>
