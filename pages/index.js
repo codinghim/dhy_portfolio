@@ -12,16 +12,21 @@ export default function Home() {
         <Layout>
             <section className={Styles.intro_section}>
                 <div>
-                    <p className={Styles.intro_text}>Hi, I&#39;m Daniel. <br />I am a web developer.</p>
+                    <p className={Styles.intro_text}><strong>Hi, I&#39;m Daniel.<br />I am a web developer.</strong><br /><br />Bring Idea to life using code.</p>
                 </div>
             </section>
-            <section className={Styles.about_section} id="about_text">
-                <div className={Styles.about_container}>
-                    <div className={Styles.arrow_img_container}>
-                        <a className={Styles.arrow_down} href="#about_text"></a>
+            <section className={Styles.about_section} id="about_section">
+                <div className={Styles.about_container} id="aboutc">
+                    <div className={Styles.arrow_img_container} >
+                        <a className={Styles.arrow_down} href="#aboutc"></a>
                     </div>
                     <div className={Styles.about_text_container}>
-                        <p className={Styles.about_text}>I am a web developer who brings ideas to life through web. I like to analyze problems and like to try to find solution. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p className={Styles.about_text}>
+                            Nice to meet you.<br />
+                            I am a web developer who brings ideas to life through web application. 
+                            I like analyzing problems and trying to find solutions. 
+                            I am interested in learning new things and I learn very quickly.
+                        </p>
                     </div>
                 </div>
             </section>

@@ -13,10 +13,10 @@
         background-clip:text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        font-size: var.$lg_font;
+        font-size: var.$xm_font;
         font-weight: bold;
         //hover effect
-        display: inline-block;
+        // display: inline-block;
         vertical-align: middle;
         -webkit-transform: perspective(1px) translateZ(0);
         transform: perspective(1px) translateZ(0);
@@ -25,6 +25,9 @@
         transition-duration: 0.3s;
         -webkit-transition-property: transform;
         transition-property: transform;
+        strong{
+            font-size: var.$lg_font;
+        }
     &:hover, &:focus, &:active {
         -webkit-transform: scale(1.2);
         transform: scale(1.2);
@@ -36,7 +39,7 @@
     min-height: 80vh;
     .about_container{
         position: relative;
-        min-height: 100vh;
+        min-height: 80vh;
         width: 80%;
         height: 100%;
         margin: 0 auto;
@@ -56,12 +59,15 @@
             height: 3px;
             width: 3px;
             margin: 0 auto;
-            border: solid black;
+            border: solid var.$primary_color;
             border-width: 0 3px 3px 0;
             display: inline-block;
             padding: 3px;
             transform: rotate(45deg);
             -webkit-transform: rotate(45deg);
+            &:hover{
+                cursor:pointer;
+            }
         }
         .about_text_container{
             width: 60%;
