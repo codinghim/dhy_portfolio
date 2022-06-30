@@ -129,7 +129,7 @@ export default function Home() {
                         <p className={Styles.experience_description}>&bull; A start-up company which provides web solutions to businesses.<br />
                             &bull; Planned and managed project development as a team.<br />
                             &bull; implemented simple and attractive responsive web design.</p>
-                        <a href="https://company-website-coral.vercel.app/" target="_blank" rel="noopener noreferrer" className={Styles.hyperlink}>Visit Website</a>
+                        <a href="https://magiwebproduction.com/" target="_blank" rel="noopener noreferrer" className={Styles.hyperlink}>Visit Website</a>
                     </div>
                     <div className={Styles.experience_divider_container}>
                         <div className={Styles.experience_divider}></div>
