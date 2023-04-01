@@ -45,7 +45,7 @@ export default function Home({portfolio}) {
                 </div>
                 <div className={Styles.portfolio_grid}>
                     {portfolio.map((portfolio)=>(
-                        <Portfolio portfolio={portfolio}/>
+                        <Portfolio portfolio={portfolio} key={portfolio.title}/>
                     ))}
                 </div>
             </section>
