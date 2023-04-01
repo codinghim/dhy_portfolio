@@ -1,0 +1,53 @@
+{
+    "portfolio":[
+        {
+            "title":"Codinghim Writes",
+            "image_src":"/images/blog_thumbnail.jpg",
+            "href":"https://github.com/codinghim/Codinghim_blog",
+            "excerpt":"A Headless CMS based blog",
+            "list":"Headless CMS(Hygraph), GraphQL, NextJS, scss, TailwindCSS"
+
+        },
+        {
+            "title":"The ComicVerse",
+            "image_src":"/images/comic_thumbnail.jpg",
+            "href":"https://github.com/codinghim/team_white_308_thecomicverse",
+            "excerpt":"A <em>full-stack web application</em> where users can create, view, and upload comics. <em>Project management</em> using Slack and documentation.",
+            "list":"Java, Spring Framework, JQuery, MongoDB"
+
+        },
+        {
+            "title":"Magi Website",
+            "image_src":"/images/magi_thumbnail.png",
+            "href":"https://github.com/codinghim/company_website",
+            "excerpt":"A <em>web application</em> to promote services.<br /> Work closely with the team to design UI.<br />",
+            "list":"ReactJS, NextJS, CSS, Sass"
+
+        },
+        {
+            "title":"Website Templates",
+            "image_src":"/images/cafe_thumbnail.png",
+            "href":"https://github.com/codinghim/Website_templates",
+            "excerpt":"Templates made for showcase website design",
+            "list":"NextJS, Sass"
+
+        },
+        {
+            "title":"Flash Cards",
+            "image_src":"/images/flashcard_thumbnail.jpg",
+            "href":"https://github.com/tylerhkmontana/flashcard",
+            "excerpt":"A <em>full-stck web application</em> where users can enter a set of words and use as an aid to memorize words.",
+            "list":"Python, Flask"
+
+        },
+        {
+            "title":"Cyber Security Attacks",
+            "image_src":"/images/cyber_security_thumbnail.jpg",
+            "href":"https://github.com/codinghim/CSE363-Cyber-Security-Attacks",
+            "excerpt":"Offensive Cyber Security to find vulnerabilities and to prevent hazardous attacks",
+            "list":"Python, "
+
+        }
+
+    ]
+}

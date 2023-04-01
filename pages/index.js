@@ -2,8 +2,10 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Styles from '../styles/index.module.scss'
 import Layout from '../components/Layout'
+import { getPortfolio } from '../service'
+import Portfolio from '../components/Portfolio'
 
-export default function Home() {
+export default function Home({portfolio}) {
   return (
     <>
         <Head>
@@ -42,79 +44,9 @@ export default function Home() {
                     </p>
                 </div>
                 <div className={Styles.portfolio_grid}>
-                    <a className={Styles.portfolio_grid_item} href="https://github.com/codinghim/team_white_308_thecomicverse" target="_blank" rel="noopener noreferrer" data-aos="fade-up">
-                        <div className={Styles.portfolio_image_container}>
-                            <Image src={`/images/comic_thumbnail.jpg`} width={350} height={250} objectFit="fill"/>
-                            <div className={Styles.portfolio_grid_item_hover}>
-                                <div className={Styles.portfolio_image_title_container}>
-                                    <p className={Styles.portfolio_image_title}>The ComicVerse</p>
-                                    <p className={Styles.portfolio_image_subtitle}>
-                                        A <em>full-stack web application</em> where users can create, view, and upload comics. <br />
-                                        <em>Project management</em> using Slack and documentation.
-                                    </p>
-                                    <p className={Styles.portfolio_image_subtitle}>
-                                        Java, Spring Framework, JQuery, MongoDB
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </a>
-                    <a className={Styles.portfolio_grid_item} href="https://github.com/codinghim/company_website" target="_blank" rel="noopener noreferrer" data-aos="fade-up" data-aos-delay="200">
-                        <div className={Styles.portfolio_image_container}>
-                            <Image src={`/images/magi_thumbnail.png`} width={350} height={250} objectFit="fill"/>
-                            <div className={Styles.portfolio_grid_item_hover}>
-                                <div className={Styles.portfolio_image_title_container}>
-                                    <p className={Styles.portfolio_image_title}>Magi Website</p>
-                                    <p className={Styles.portfolio_image_subtitle}>
-                                        A <em>web application</em> to promote services.<br />
-                                        Work closely with the team to design UI.<br />
-                                    </p>
-                                    <p className={Styles.portfolio_image_subtitle}>
-                                        ReactJS, NextJS, CSS, Sass
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a className={Styles.portfolio_grid_item} href="https://github.com/codinghim/Website_templates" target="_blank" rel="noopener noreferrer" data-aos="fade-up" data-aos-delay="400">
-                        <div className={Styles.portfolio_image_container}>
-                            <Image src={`/images/cafe_thumbnail.png`} width={350} height={250} objectFit="fill"/>
-                            <div className={Styles.portfolio_grid_item_hover}>
-                                <div className={Styles.portfolio_image_title_container}>
-                                    <p className={Styles.portfolio_image_title}>Website Templates</p>
-                                    <p className={Styles.portfolio_image_subtitle}>project and description</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a className={Styles.portfolio_grid_item} href="https://github.com/tylerhkmontana/flashcard" target="_blank" rel="noopener noreferrer" data-aos="fade-up">
-                        <div className={Styles.portfolio_image_container}>
-                            <Image src={`/images/flashcard_thumbnail.jpg`} width={350} height={250} objectFit="fill"/>
-                            <div className={Styles.portfolio_grid_item_hover}>
-                                <div className={Styles.portfolio_image_title_container}>
-                                    <p className={Styles.portfolio_image_title}>Flash Cards</p>
-                                    <p className={Styles.portfolio_image_subtitle}>
-                                        A <em>full-stck web application</em> where users can enter a set of words and use as an aid to memorize words.
-                                    </p>
-                                    <p className={Styles.portfolio_image_subtitle}>
-                                        Python, Flask
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a className={Styles.portfolio_grid_item} href="https://github.com/codinghim/CSE363-Cyber-Security-Attacks" target="_blank" rel="noopener noreferrer" data-aos="fade-up" data-aos-delay="200">
-                        <div className={Styles.portfolio_image_container}>
-                            <Image src={`/images/cyber_security_thumbnail.jpg`} width={350} height={250} objectFit="fill"/>
-                            <div className={Styles.portfolio_grid_item_hover}>
-                                <div className={Styles.portfolio_image_title_container}>
-                                    <p className={Styles.portfolio_image_title}>Cyber Security Attacks</p>
-                                    <p className={Styles.portfolio_image_subtitle}>project and description</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
+                    {portfolio.map((portfolio)=>(
+                        <Portfolio portfolio={portfolio}/>
+                    ))}
                 </div>
             </section>
             
@@ -158,4 +90,14 @@ export default function Home() {
         </Layout>
         </>
   )
+}
+
+export async function getServerSideProps(){
+    const portfolio = JSON.parse(await getPortfolio())
+
+    return{
+        props:{
+            portfolio:portfolio.portfolio
+        }
+    }
 }
